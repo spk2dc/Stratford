@@ -1,0 +1,16 @@
+﻿{
+  "Name": "phone",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "6KrAw2GS5EmQ2ZsTTUKfGg",
+  "Reference": "FetXtsidjkuOnO8jeJBZHw/6KrAw2GS5EmQ2ZsTTUKfGg",
+  "ParentRef": "FetXtsidjkuOnO8jeJBZHw/JyNusCAuXEm2RPQh6Sk_AA",
+  "Created": "2024-02-21T16:52:58.7700478Z",
+  "Updated": "2024-02-21T16:54:03.6015611Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

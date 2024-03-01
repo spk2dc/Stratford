@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="g0C9EEYj_UO-sqAyxYl-Ew" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://splibrary.ca/suggest-purchase" DesignTimeRectangle="49, 1012, 158, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl id='edit-actions-submit' aaname='Submit' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-actions-submit' aaname='Submit' check:text='Submit' /&gt;" Guid="56f162c1-c648-45d4-ab80-132e95daf902" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0ef8759a0ed32504cd3e07380874f99f.png" xmlns="">0sWvlPOGv7kmcMQS7CYdfWw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

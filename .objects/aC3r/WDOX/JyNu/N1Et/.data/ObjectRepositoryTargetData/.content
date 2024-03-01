@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LnTfuHfcJEmmGO6T0YHf7Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://splibrary.ca/suggest-purchase" DesignTimeRectangle="49, 588, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-your-email-a…'" FullSelectorArgument="&lt;webctrl id='edit-your-email-address-textfield' aaname='Your Email Address' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-your-email-address-textfield' aaname='Your Email Address' /&gt;" Guid="2a2ae4e0-6f6c-4e7f-9140-a750843c52f5" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="49, 555, 195, 31" ElementType="Text" FriendlyName="'Your Email Address'" FullSelectorArgument="&lt;webctrl aaname='Your Email Address' parentid='edit-yourinfo' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Your Email Address' parentid='edit-yourinfo' check:text='Your Email Address' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a17e399f35bc386f60702c0aa0fd2932.png" xmlns="">0CbVsWbB55kaOxDs9KeWFlw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eUclTLhZnEuvT24W_HCxyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://splibrary.ca/suggest-purchase" DesignTimeRectangle="654, 524, 109, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Audiobook' innertext='Audiobook' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Audiobook' innertext='Audiobook' check:text='unchecked' /&gt;" Guid="85b5fe8a-e290-435e-b0e0-66ebf0cf2f8e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="49, 480, 71, 31" ElementType="Text" FriendlyName="'Format'" FullSelectorArgument="&lt;webctrl aaname='Format' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Format' tag='LABEL' check:text='Format' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9452cbae954daf8ddd6ae33b16e72b5e.png" xmlns="">0pBQEss6_EkGb6Q9luFQ68w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

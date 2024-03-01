@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8bFblAF5xEK6NU8XaKkSuQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://splibrary.ca/suggest-purchase" DesignTimeRectangle="49, 414, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-your-name'" FullSelectorArgument="&lt;webctrl id='edit-your-name' aaname='Your Name' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-your-name' aaname='Your Name' /&gt;" Guid="e06ea560-0146-4503-b192-fa771de9da8b" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="49, 381, 110, 31" ElementType="Text" FriendlyName="'Your Name'" FullSelectorArgument="&lt;webctrl parentid='edit-yourinfo' aaname='Your Name' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='edit-yourinfo' aaname='Your Name' check:text='Your Name' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="69afbb39d8b482b03c4ac6d43f2968fa.png" xmlns="">0KYSgelvq0UefZsHa6WiKLA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

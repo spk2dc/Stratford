@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hxiEqv6V-ka6eHTwYPklRA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://splibrary.ca/suggest-purchase" DesignTimeRectangle="80, 779, 90, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl parentid='edit-home-library-checkboxes' aaname='Stratford' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='edit-home-library-checkboxes' aaname='Stratford' check:text='unchecked' /&gt;" Guid="716298a1-21cc-4171-a4e2-d4d5b45f34ef" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="49, 729, 137, 31" ElementType="Text" FriendlyName="'Home Library'" FullSelectorArgument="&lt;webctrl parentid='edit-home-library' aaname='Home Library' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='edit-home-library' aaname='Home Library' check:text='Home Library' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1c7c38bf6f199314daad55720d436b92.png" xmlns="">0Z9crverpm02JWSQTvDiFDA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

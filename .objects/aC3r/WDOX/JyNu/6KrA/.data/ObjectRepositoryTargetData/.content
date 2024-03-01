@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5hcO8kuD-EatVlqR-pzHvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://splibrary.ca/suggest-purchase" DesignTimeRectangle="49, 501, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-your-phone-n…'" FullSelectorArgument="&lt;webctrl id='edit-your-phone-number' aaname='Your Phone Number' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-your-phone-number' aaname='Your Phone Number' /&gt;" Guid="ff180983-83e5-4bb7-9c7b-a04d1dd0ee88" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="49, 468, 202, 31" ElementType="Text" FriendlyName="'Your Phone Number'" FullSelectorArgument="&lt;webctrl aaname='Your Phone Number' parentid='edit-yourinfo' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Your Phone Number' parentid='edit-yourinfo' check:text='Your Phone Number' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bb11373876c23ae1e3acac148cfc5f57.png" xmlns="">0f5RDc2HY7EqUoyxQgUOFCA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

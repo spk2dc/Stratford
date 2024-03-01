@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="o9dYby_AvkqFQ935b-t1Zw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://splibrary.ca/books-more/cant-find-it?token=NgDdoV1J9320VdyZn6pq6WoYuvq53g_0EpRXpimaI0E" DesignTimeRectangle="369, 590, 266, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Suggest a Purchase'" FullSelectorArgument="&lt;webctrl aaname='Suggest a Purchase' innertext='Suggest a Purchase' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Suggest a Purchase' innertext='Suggest a Purchase' check:text='Suggest a Purchase' /&gt;" Guid="eae7f8eb-2f30-403e-81e8-d9cbf34480cc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Can&amp;apos;t Find It? | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8e20319ec95a477eea7a2df3826a605b.png" xmlns="">0Evfw33JooU6TY_1hKVgDjA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
