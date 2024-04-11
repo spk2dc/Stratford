@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>848,1296</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,3936.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>WPL_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -44,6 +44,8 @@
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -109,48 +111,59 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RWL" sap:VirtualizedContainerService.HintSize="668.8,1231.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Stratford" sap:VirtualizedContainerService.HintSize="705.6,3872" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="author" />
       <Variable x:TypeArguments="x:String" Name="title" />
       <Variable x:TypeArguments="x:Int32" Name="index" />
+      <Variable x:TypeArguments="x:String" Name="year" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="606.4,1119.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="15" Values="[list]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="643.2,3783.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="15" Values="[list]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572.8,931.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609.6,3594.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="529.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[index.ToString+&quot;: &quot;+currentItem]" />
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="529.6,659.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="547.2,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[index.ToString+&quot;: &quot;+currentItem]" />
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="547.2,3325.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,442.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="x:String" Name="year" />
-                    </Sequence.Variables>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513.6,3085.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,318.4" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,200" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="353.6,113.6" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Assign_5">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[title]</OutArgument>
                       </Assign.To>
@@ -158,7 +171,7 @@
                         <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(0)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Assign_7">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[author]</OutArgument>
                       </Assign.To>
@@ -166,7 +179,7 @@
                         <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - year ")(0)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Assign_8">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[year]</OutArgument>
                       </Assign.To>
@@ -174,6 +187,100 @@
                         <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - year ")(1).Split(",")(0)]</InArgument>
                       </Assign.Value>
                     </Assign>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,184" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[index.ToString+&quot;: &quot;+title]" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[title]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://splibrary.ca/suggest-purchase" ContentHash="e4SoMpTuEkqfuaf9bIfEAg" DesignTimeRectangle="49, 438, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-title'" FullSelectorArgument="&lt;webctrl id='edit-title' aaname='Title' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-title' aaname='Title' /&gt;" Guid="c961aa1f-c17f-44ec-92e5-743896cdc464" InformativeScreenshot="5379736cda77118b2a3b414fd23d30d6.png" IsResponsive="True" Reference="FetXtsidjkuOnO8jeJBZHw/knCdcSqKYk-TvS26M_Ub6Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="49, 405, 43, 31" ElementType="Text" FriendlyName="'Title'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Title' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Title' check:text='Title' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'author'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[author]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://splibrary.ca/suggest-purchase" ContentHash="OgbDaspmSUumIkDV0R-_Eg" DesignTimeRectangle="49, 525, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-author'" FullSelectorArgument="&lt;webctrl id='edit-author' aaname='Author' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-author' aaname='Author' /&gt;" Guid="26c28f85-15e7-418b-90d1-3d0bcd24e454" InformativeScreenshot="48c6a8b2833fcfe5252144a1b6aabe5d.png" IsResponsive="True" Reference="FetXtsidjkuOnO8jeJBZHw/WFjhrFBUP0aCzpgHh5J0-g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="49, 492, 70, 31" ElementType="Text" FriendlyName="'Author'" FullSelectorArgument="&lt;webctrl aaname='Author' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Author' tag='LABEL' check:text='Author' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'audience'" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://splibrary.ca/suggest-purchase" ContentHash="7a8z5btd9kS1NVeiyWImhg" DesignTimeRectangle="80, 532, 66, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Adults' innertext='Adults' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Adults' innertext='Adults' check:text='unchecked' /&gt;" Guid="888d42dc-6e0d-440e-a258-21e9682f0d2c" InformativeScreenshot="13cad22b2b1d329dc43dd96ac7c82237.png" Reference="FetXtsidjkuOnO8jeJBZHw/HE753agshk2o40Sc5CPFRg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="49, 482, 310, 31" ElementType="Text" FriendlyName="'What audience'" FullSelectorArgument="&lt;webctrl parentid='edit-what-audience-is-this-item-for---wrapper' aaname='What audience is this item for?' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='edit-what-audience-is-this-item-for---wrapper' aaname='What audience is this item for?' check:text='What audience is this item for?' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Text="Senthil Kannan" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://splibrary.ca/suggest-purchase" ContentHash="8bFblAF5xEK6NU8XaKkSuQ" DesignTimeRectangle="49, 414, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-your-name'" FullSelectorArgument="&lt;webctrl id='edit-your-name' aaname='Your Name' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-your-name' aaname='Your Name' /&gt;" Guid="e06ea560-0146-4503-b192-fa771de9da8b" InformativeScreenshot="69afbb39d8b482b03c4ac6d43f2968fa.png" IsResponsive="True" Reference="FetXtsidjkuOnO8jeJBZHw/UI47qhjDEEu59WlYXUSEnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="49, 381, 110, 31" ElementType="Text" FriendlyName="'Your Name'" FullSelectorArgument="&lt;webctrl parentid='edit-yourinfo' aaname='Your Name' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='edit-yourinfo' aaname='Your Name' check:text='Your Name' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'phone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" Text="5712507368" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://splibrary.ca/suggest-purchase" ContentHash="5hcO8kuD-EatVlqR-pzHvw" DesignTimeRectangle="49, 501, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-your-phone-n…'" FullSelectorArgument="&lt;webctrl id='edit-your-phone-number' aaname='Your Phone Number' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-your-phone-number' aaname='Your Phone Number' /&gt;" Guid="ff180983-83e5-4bb7-9c7b-a04d1dd0ee88" InformativeScreenshot="bb11373876c23ae1e3acac148cfc5f57.png" IsResponsive="True" Reference="FetXtsidjkuOnO8jeJBZHw/6KrAw2GS5EmQ2ZsTTUKfGg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="49, 468, 202, 31" ElementType="Text" FriendlyName="'Your Phone Number'" FullSelectorArgument="&lt;webctrl aaname='Your Phone Number' parentid='edit-yourinfo' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Your Phone Number' parentid='edit-yourinfo' check:text='Your Phone Number' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" Text="bionicle0107@yahoo.com" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://splibrary.ca/suggest-purchase" ContentHash="LnTfuHfcJEmmGO6T0YHf7Q" DesignTimeRectangle="49, 588, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-your-email-a…'" FullSelectorArgument="&lt;webctrl id='edit-your-email-address-textfield' aaname='Your Email Address' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-your-email-address-textfield' aaname='Your Email Address' /&gt;" Guid="2a2ae4e0-6f6c-4e7f-9140-a750843c52f5" InformativeScreenshot="a17e399f35bc386f60702c0aa0fd2932.png" IsResponsive="True" Reference="FetXtsidjkuOnO8jeJBZHw/N1EtS6DC4kCPHf079oF83A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="49, 555, 195, 31" ElementType="Text" FriendlyName="'Your Email Address'" FullSelectorArgument="&lt;webctrl aaname='Your Email Address' parentid='edit-yourinfo' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Your Email Address' parentid='edit-yourinfo' check:text='Your Email Address' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'card'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" Text="20500001613327" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://splibrary.ca/suggest-purchase" ContentHash="dZJvrZU8CUaNX6quaev7-w" DesignTimeRectangle="49, 675, 1819, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT edit-your-library…'" FullSelectorArgument="&lt;webctrl id='edit-your-library-card-number' aaname='Your Library Card Number' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-your-library-card-number' aaname='Your Library Card Number' /&gt;" Guid="50ecba90-63fa-4420-a84c-0d1551fdee9f" InformativeScreenshot="3e77522badaab20b99b7d194df5dc590.png" IsResponsive="True" Reference="FetXtsidjkuOnO8jeJBZHw/6TVs-tVrAEaGLtvYDJZUQQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="49, 642, 262, 31" ElementType="Text" FriendlyName="'Your Library Card Number'" FullSelectorArgument="&lt;webctrl aaname='Your Library Card Number' parentid='edit-yourinfo' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Your Library Card Number' parentid='edit-yourinfo' check:text='Your Library Card Number' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'branch'" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://splibrary.ca/suggest-purchase" ContentHash="hxiEqv6V-ka6eHTwYPklRA" DesignTimeRectangle="80, 779, 90, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl parentid='edit-home-library-checkboxes' aaname='Stratford' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='edit-home-library-checkboxes' aaname='Stratford' check:text='unchecked' /&gt;" Guid="716298a1-21cc-4171-a4e2-d4d5b45f34ef" InformativeScreenshot="1c7c38bf6f199314daad55720d436b92.png" Reference="FetXtsidjkuOnO8jeJBZHw/eVh6LBBOsESA7SiOJDqFcQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="49, 729, 137, 31" ElementType="Text" FriendlyName="'Home Library'" FullSelectorArgument="&lt;webctrl parentid='edit-home-library' aaname='Home Library' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='edit-home-library' aaname='Home Library' check:text='Home Library' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="451.2,182.4" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://splibrary.ca/suggest-purchase" ContentHash="g0C9EEYj_UO-sqAyxYl-Ew" DesignTimeRectangle="49, 1012, 158, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl id='edit-actions-submit' aaname='Submit' /&gt;" FuzzySelectorArgument="&lt;webctrl id='edit-actions-submit' aaname='Submit' check:text='Submit' /&gt;" Guid="56f162c1-c648-45d4-ab80-132e95daf902" InformativeScreenshot="0ef8759a0ed32504cd3e07380874f99f.png" Reference="FetXtsidjkuOnO8jeJBZHw/ke6_u6RoUEyqRLliNyI0mQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase | Stratford Public Library' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
                   </Sequence>
                 </ActivityAction>
               </uix:NApplicationCard.Body>

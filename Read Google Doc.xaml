@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>848,1137.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>850.4,1013.5999999999999</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Read_Google_Doc_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -40,6 +40,8 @@
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.GSuite.Contracts</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -86,9 +88,16 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Read_Google_Doc" sap:VirtualizedContainerService.HintSize="592,1072.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Read_Google_Doc" sap:VirtualizedContainerService.HintSize="592,948.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="list" />
     </Sequence.Variables>
@@ -97,28 +106,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ugad:GoogleDocsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="senthil.kannan.61109@gmail.com" Action="UseExisting" Connector="uipath-google-docs" DisplayName="Use Google Document" DocumentId="https://docs.google.com/document/d/1FZLcal_dqECkpSt8WSt0Nh7wYfb8NZYkMy5SzGowr-k/edit?usp=drivesdk" DocumentName="RWL &amp; Stratford" sap:VirtualizedContainerService.HintSize="529.6,960.8" sap2010:WorkflowViewState.IdRef="GoogleDocsApplicationScope_1" Mode="Browse" UseConnectionService="False" UserEmail="senthil.kannan.61109@gmail.com">
+    <ugad:GoogleDocsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="senthil.kannan.61109@gmail.com" Action="UseExisting" Connector="uipath-google-docs" DisplayName="Use Google Document" DocumentId="https://docs.google.com/document/d/1FZLcal_dqECkpSt8WSt0Nh7wYfb8NZYkMy5SzGowr-k/edit?usp=drivesdk" DocumentName="RWL &amp; Stratford" sap:VirtualizedContainerService.HintSize="529.6,860" sap2010:WorkflowViewState.IdRef="GoogleDocsApplicationScope_1" Mode="Browse" UseConnectionService="False" UserEmail="senthil.kannan.61109@gmail.com">
       <ugad:GoogleDocsApplicationScope.Body>
         <ActivityAction x:TypeArguments="ugad:IGoogleDocTarget">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ugad:IGoogleDocTarget" Name="Document" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,678.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,554.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uga:ReadAllText ContinueOnError="{x:Null}" DocumentId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read All Text" GoogleDoc="[Document]" sap:VirtualizedContainerService.HintSize="433.6,140.8" sap2010:WorkflowViewState.IdRef="ReadAllText_1" Result="[list]" />
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[list]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[list.Split("FCPL - no limit")(1)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <uga:ReadAllText ContinueOnError="{x:Null}" DocumentId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read All Text" GoogleDoc="[Document]" sap:VirtualizedContainerService.HintSize="433.6,180.8" sap2010:WorkflowViewState.IdRef="ReadAllText_1" Result="[list]" />
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,121.6" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:String[]">[finalList]</OutArgument>
               </Assign.To>
@@ -126,7 +127,7 @@
                 <InArgument x:TypeArguments="s:String[]">[list.Split(vbLf, StringSplitOptions.RemoveEmptyEntries)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;final list(0): &quot;+finalList(0)]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;final list(0): &quot;+finalList(0)]" />
           </Sequence>
         </ActivityAction>
       </ugad:GoogleDocsApplicationScope.Body>
